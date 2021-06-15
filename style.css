@@ -9,14 +9,18 @@ a {
 
 
 #navbar {
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 200%;
     position: fixed;
     background-color: rgba(15, 80, 77, 0.829);
     width: 100vw;
-    max-width: 100vw;
+    box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr repeat(3, auto);
     grid-template-areas:
     ". about project contact";
+    column-gap: 5%;
 }
 #nav-wel {
     grid-area: about;
