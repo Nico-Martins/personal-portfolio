@@ -75,23 +75,73 @@ a {
     grid-area: projects;
     display: grid;
     grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(2, auto);
+    grid-template-rows: repeat(3, auto);
     grid-template-areas:
     "tribute survey-form"
-    "product documentation";
+    "product documentation"
+    "see-more see-more";
     justify-items: center;
     align-items: center;
+    row-gap: 5%;
+    column-gap: 5%;
+}
+.project-tile {
+    background-color: rgba(49, 100, 83, 0.746);
+    padding: 2% 0% 4% 0%;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.2);
+}
+.project-title {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2.2em;
+    text-align: center;
+    line-height: 2.5em;
+}
+.project-img {
+    width: 700px;
+    height: 350px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+#profile-link {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 3em;
+    grid-area: see-more;
+    justify-self: center;
+    align-self: center;
+    padding-bottom: 5%;
 }
 
 
 #contact {
-    padding: 5%;
+    padding: 2% 2% 4% 2%;
     background-color: rgba(103, 167, 103, 0.699);
     grid-area: contact;
     display: grid;
     grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+    "contact-title contact-title contact-title"
+    "git fcc linkedin";
     justify-items: center;
     align-items: center;
+    row-gap: 50%;
+}
+#contact-title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    grid-area: contact-title;
+}
+#github {
+    grid-area: git;
+    justify-self: end;
+}
+#fcc {
+    grid-area: fcc;
+}
+#linkedin {
+    grid-area: linkedin;
+    justify-self: start;
 }
 .contact-icon {
     width: 50px;
