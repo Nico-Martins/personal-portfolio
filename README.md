@@ -6,4 +6,5 @@ in this responsive page all prior projects will be displayed to show the capabil
 
 Page preview:
 -------------
+https://nico-martins.github.io/personal-portfolio/
 
